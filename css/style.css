@@ -1,0 +1,445 @@
+:root {
+    --primary: #E8288B;
+    --bg: #FFFEDB;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: var(--primary);
+  }
+    /* navbar */
+.navbar {
+    display: flex;
+    color: var(--primary);
+    justify-content: space-between;
+    align-items: center;  
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1.4rem 3%;
+    z-index: 9999;
+    background-color: var(--bg);
+}
+.navbar a img {
+    width: 8rem;
+}
+
+.navbar .navbar-list {
+    color: var(--primary);
+    border: solid;
+    border-color: var(--primary);
+    border-radius: 50px;
+    gap: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+.navbar .navbar-list:hover {
+    background-color: var(--primary);
+    color: var(--bg);
+}
+
+.navbar-extra {
+    background-color: var(--primary);
+    padding: 0.4rem 0.9rem;
+    color: var(--bg);
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero img {
+    margin-top: 6rem;
+    width: 39%;
+}
+
+.hero .hero-text {
+    padding: 4rem;
+    margin-top: 4rem;
+}
+
+.hero .hero-text h1 {
+    font-size: 3.7rem;
+}
+
+.hero .hero-text span {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.hero .hero-text p {
+    padding-top: 2rem;
+    width: 70%;
+    line-height: 2rem;
+}
+/* hero end */
+
+/* about start */
+.about,
+.contact-me,
+.ex {
+    padding: 6rem 3% 0;
+}
+
+.about .about-title-page,
+.contact-title, .exp h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.about .about-content {
+    padding: 1rem 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+} 
+
+.about-image img {
+    height: 23rem;
+}
+.about-p h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+.about-p h2 span {
+    font-weight: 700;
+}
+.about-p p {
+    font-size: 1rem;
+    line-height: 2rem;
+    gap: 2rem
+}
+
+/* about end */
+
+/* My Service Start */
+.myservice {
+    /* background-color: var(--primary); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* padding: 0.5rem 3% 1.5rem; */
+}
+.myservice h3 {
+    color: var(--primary);
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.myservice-content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: var(--primary);
+    width: 100%;
+    padding: 1rem;
+}
+.myservice-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg);
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.myservice-text h4 {
+    /* border-bottom: 0.3px solid; */
+    font-size: 1.1rem;
+}
+.myservice-text p {
+    font-weight: 350;
+    line-height: 1.7rem;
+}
+/* My service end */
+
+/* experience start */
+.exp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--primary);
+    align-items: center;
+    background-image: url('../img/bg-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.exp p {
+    max-width: 30rem;
+    margin: 1.5rem 0;
+}
+.exp-image {
+    display: flex;
+    padding: 2rem 5%;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+}
+.exp-image .ex-img1 {
+    height: 10rem;
+    opacity: 30%;
+}
+.exp-image .ex-img2 {
+    height: 15rem;
+    opacity: 70%;
+}
+.exp-image .ex-img3 {
+    height: 20rem;
+}
+.content-exp {
+    display: flex;
+    flex-direction: column;
+}
+.content-exp h3 {
+    padding: 0 0 2rem;
+}
+.content-campus {
+    display: flex;
+    gap: 1rem;
+}
+.campus {
+    width: 15rem;
+    position: relative;
+    border-radius: 20px;
+    border: solid;
+    box-sizing: 0.5rem;
+    border-color: var(--primary);
+}
+.campus img {
+    width: 100%;
+    border-radius: 18px 18px 0 0;
+}
+.campus div {
+    padding: 0 1rem 1rem;
+}
+.campus div h4 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+.campus div p {
+    width: 100%;
+    margin: 0;
+    font-size: 0.7rem;
+    font-weight: 500;
+    opacity: 70%;
+    justify-content: end;
+}
+.campus div a {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg);
+    bottom: 1rem;
+    display: inline-block;
+    display: flex;
+    background-color: rgba(232, 40, 139, 0.6);
+    padding: 0.3rem 0.6rem;
+    /* margin: 0.5rem; */
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 40px;
+}
+.feather {
+    width: 1rem;
+}
+
+.acv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3%;
+    width: 100%;
+}
+.acv h4 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 600;
+}
+.acv-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 1rem;
+    width: 100%;
+}
+.acv-content div {
+    color: var(--primary);
+    text-align: left;
+}
+.acv-content div h5 {
+    font-size: 1rem;
+}
+
+.acv-content div ul li {
+    padding: 1rem 0;
+}
+.acv-content div ul li a {
+    font-size: 0.8rem;
+    color: #E8288B;
+    font-weight: 600;
+    list-style-position: inside;
+}
+.acv-content div ul li p {
+    font-size: 0.7rem;
+} 
+
+.closing-state {
+    background-color: var(--primary);
+    color: var(--bg);
+    padding: 1rem 3%;
+    gap: 1rem;
+}
+.closing-state h6 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+.closing-state p {
+    font-size: 1.5rem;
+    font-weight: 350;
+}
+/* experience end */
+
+/* contact me start */
+.contact-me h3 {
+    padding-bottom: 1rem;
+}
+.contact-form {
+    display: flex;
+    align-items: start;
+    background-color: #ffeedb;
+    margin-bottom: 1rem 3%;
+}
+.form-input {
+    padding: 2rem;
+    color: #E8288B;
+    width: 100%;
+}
+.form-input div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.form-input div label{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.form-input div input {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ffeedb;
+    border: solid;
+    box-sizing: 0.5px;
+    border-color: #E8288B;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+.form-input button {
+    background-color: var(--primary);
+    padding: 0.6rem 0.9rem;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--bg);
+}
+/* contact me end*/
+
+/* footer start */
+.footer {
+    background-color: var(--primary);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: var(--bg);
+    padding: 0.7rem;
+    gap: 0.5rem;
+}
+.feather-sosmed {
+    color: var(--bg);
+    width: 5rem;
+    
+}
+.footer .footer-sosmed a {
+    color: #ffeedb;
+    padding: 0.8rem;
+    font-weight: 500;
+}
+.footer .footer-copy a {
+    color: #e79ed6;
+}
+/* footer end */
+.mc1-backicon {
+    position: fixed;
+    display: inline-block;
+    padding: 0.5rem;
+    top: 2rem;
+    left: 2rem;
+    width:3rem;
+    background-color: var(--bg);
+    border-radius: 50px;
+}
+.mc1-imagepage {
+    display: flex;
+    width: 100%;
+}
+.mc1-imagepage .mc1-image {
+    width: 25%;
+}
+.mc1-text {
+    display: flex;
+    color: var(--primary);
+    padding: 1rem 3%;
+    gap: 1rem;
+}
+.mc1-title h1 {
+    font-weight: 700;
+}
+.mc1-title .mc1-location {
+    opacity: 75%;
+    font-size: 0.7rem;
+    padding: 1rem 0;
+}
+.mc1-text .mc1-pg {
+    border-left: solid;
+    box-sizing: 1px;
+    padding: 1rem;
+}
